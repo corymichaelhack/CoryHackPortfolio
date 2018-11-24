@@ -23,5 +23,8 @@
 /public/assets
 .byebug_history
 
+# If a secrets.yml is created
+/config/secrets.yml
+
 # Ignore master key for decrypting credentials and more.
 /config/master.key
