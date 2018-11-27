@@ -3,6 +3,12 @@ class PortfoliosController < ApplicationController
 
   def index
     @portfolios = Portfolio.all
+
+##Scoping for custom ouputs with our topics
+    # @portfolios = Portfolio.ruby_on_rails_portfolio_item
+    # or 
+    # @portfolios = Portfolio.angular
+
   end
 
   def new
