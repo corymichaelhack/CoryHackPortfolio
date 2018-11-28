@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, path: '', path_names: {sign_in: 'login', sign_out: 'logout', sign_up: 'register' }
   ## Override resources values with except command
   resources :portfolios, except: [:show]
   ## Assign custom route to original route as new path name 
