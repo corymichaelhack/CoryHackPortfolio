@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   ## Override resources values with except command
   resources :portfolios, except: [:show]
   ## Assign custom route to original route as new path name 
