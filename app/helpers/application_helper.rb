@@ -15,4 +15,8 @@ module ApplicationHelper
     content_tag(:p, greeting, class: "source-greeting")
     end
  end
+
+  def copyright_generator
+    @copyright = ChackViewTool::Renderer.copyright 'Cory Hack', 'All Rights Reserved'
+  end
 end

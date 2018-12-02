@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/corymichaelhack/chack_view_tool
+  revision: d96db147dca99a24f5a8a4a37ca1f022e7342f1a
+  specs:
+    chack_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -204,6 +210,7 @@ DEPENDENCIES
   bootsnap (>= 1.1.0)
   bootstrap (~> 4.0.0)
   byebug
+  chack_view_tool!
   coffee-rails (~> 4.2)
   devise (~> 4.5)
   friendly_id (~> 5.2.4)
