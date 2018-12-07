@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users, path: '', path_names: {sign_in: 'login', sign_out: 'logout', sign_up: 'register' }
   ## Override resources values with except command
-  resources :portfolios, except: [:show]
+  resources :portfolios, except: [:show] do
+    put :sort, on: :collection
+  end
   ## Assign custom route to original route as new path name 
   get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
   
