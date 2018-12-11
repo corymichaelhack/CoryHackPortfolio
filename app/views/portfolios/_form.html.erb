@@ -1,4 +1,10 @@
 <%= form_for(@portfolio) do |form| %>
+  <% if @portfolio.errors.any? %>
+    <% @portfolio.errors.full_messages.each do |message| %>
+     <%= alert_generator message %>
+    <% end %>
+  <% end %>
+
   <div class="row">
     <div class="col-md-6">
       <div class="form-group">
