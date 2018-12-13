@@ -8,4 +8,8 @@ class Blog < ApplicationRecord
   belongs_to :topic, optional: true
 
   has_many :comments, dependent: :destroy
+
+  def self.recent
+    order("updated_at DESC")
+  end
 end
