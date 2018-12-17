@@ -1,8 +1,28 @@
-<header class="masthead mb-auto">
-  <div class="inner">
-    <nav class="nav nav-masthead justify-content-center">
-      <%= nav_helper 'nav-link', 'span' %>
-      <%= login_helper('nav-link') %>
-    </nav>
+<nav class="navbar navbar-expand-md navbar-light bg-light blog-nav">
+  <div class="container">
+    <%= link_to "Cory Hack", root_path, class: 'navbar-brand' %>
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mr-auto">
+         <%= nav_helper 'nav-link', 'li' %>
+          <%= login_helper('nav-link') %>
+      </ul>
+    </div>
   </div>
-</header>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
