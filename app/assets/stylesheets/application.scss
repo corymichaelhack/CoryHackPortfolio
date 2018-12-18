@@ -180,6 +180,7 @@ body {
 .profile-img {
  border: 2px solid black;
  border-radius: 10px;
+ width: 100%;
 }
 
 .app-card-container a {
@@ -193,4 +194,13 @@ body {
 
 .job-card {
   padding: 10px;
+}
+
+.skill {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.card {
+  margin: 60px;
 }
