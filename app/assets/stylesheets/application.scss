@@ -167,3 +167,21 @@ body {
   padding: 30px;
   background-color: rgba(255, 255, 255, 0.9);
 }
+
+.app-card-container {
+  color: black;
+  text-align: left;
+}
+
+.app-card-container > .card {
+  padding: 30px;
+}
+
+.profile-img {
+ border: 2px solid black;
+ border-radius: 10px;
+}
+
+.app-card-container a {
+  color: black;
+}
