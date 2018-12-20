@@ -1,7 +1,21 @@
 @import "bootstrap";
 @import "jquery-ui";
 @import "gritter";
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto');
 
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6, {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
 
 :root {
   --jumbotron-padding-y: 3rem;
