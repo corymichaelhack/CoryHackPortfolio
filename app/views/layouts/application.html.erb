@@ -14,27 +14,32 @@
   </head>
 
   <body class="text-center">
-   
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-
-      <%= video_tag(
-          'bright_lights.m4v',
-          id:'background',
-          autoplay: true,
-          loop: true,
-          muted: true
-        )
-
-      %>
       
-      <%= render "shared/application_nav" %>  
+       <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         
-      <%= yield %>
 
-      <%= render "shared/application_footer" %> 
 
-      <%= alerts %>
+        <%= render "shared/application_nav" %>  
+
+        <%= video_tag(
+            'bright_lights.m4v',
+            id:'background',
+            autoplay: true,
+            loop: false,
+            muted: true
+          )
+
+        %>
+          
+        <%= yield %>
+
+        <%= render "shared/application_footer" %> 
+
+        <%= alerts %>
+      
+      </div> 
+
+     
     
-    </div> 
   </body>
 </html>
