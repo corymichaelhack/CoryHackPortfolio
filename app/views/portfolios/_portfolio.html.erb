@@ -1,10 +1,11 @@
 <div class="col-md-4">
   <div class="card mb-4 shadow-sm" data-id="<%= portfolio.id %>">
     
-    <%if portfolio.thumb_image != nil %>
+   <!-- 
     <%= image_tag portfolio_img(portfolio.thumb_image, 'thumb'), width: '100%' %>
-    <% end %>
-
+   
+    --> 
+    
     <div class="card-body">
       <p class="card-text">
         <span><%= link_to portfolio.title, portfolio_show_path(portfolio) %></span>
