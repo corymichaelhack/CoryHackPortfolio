@@ -29,61 +29,152 @@
 
       <div class="col-md-8">
         <p>
-          Text about myself
+          Fast learner and creative individual looking to cement my career in web development utilizing my programming, design and content creation skills, knowledge and expertise. 
         </p>
-
         <p>
-          more text about myself
+          Experienced leader in client consultancy, project development and technical troubleshooting from previous positions in live events. 
         </p>
+        <p>
+          Team player wanting to learn, grow, and succeed with others for others.
+        </p>
+        
 
         <p>
           <button class="btn btn-primary" 
-                  type="button" 
                   data-toggle="collapse" 
-                  data-target="#jobHistory" 
-                  aria-expanded="false" 
-                  aria-controller="jobHistory">
-            Job History
+                  data-target="#collapseOne" 
+                  aria-expanded="true" 
+                  aria-controls="collapseOne">
+                  Skills
           </button>
 
-          <button class="btn btn-primary" 
-                  type="button" 
+          <button class="btn btn-primary collapsed" 
                   data-toggle="collapse" 
-                  data-target="#education" 
+                  data-target="#collapseTwo" 
                   aria-expanded="false" 
-                  aria-controller="education">
-            Education
+                  aria-controls="collapseTwo">
+                  Job History
           </button>
 
+          <button class="btn btn-primary collapsed" 
+                  data-toggle="collapse" 
+                  data-target="#collapseThree" 
+                  aria-expanded="false" 
+                  aria-controls="collapseThree">
+                  Education
+          </button>
         </p>
 
-        <p>
-          <!-- Job history tab -->
-          <div class="collapse" id="jobHistory">
-            <div class="card card-block item-card">
-              Job 1
-            </div>
-            <div class="card card-block item-card">
-              Job 2
-            </div>
-            <div class="card card-block item-card">
-              Job 3
+
+        <div id="accordion">
+
+          <div class="card accordion-card">
+
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                    
+                <!-- Skills tab -->
+                <div class="card card-block item-card">
+                  <h5> Languages and Frameworks </h5>
+                  <p> Ruby, Ruby on Rails, Javascript, jQuery, PostgreSQL, Bootstrap, HTML, CSS </p>
+                </div>
+
+                <div class="card card-block item-card">
+                  <h5> Applications </h5>
+                  <p> Adobe Creative Suite; Premier Pro, Photoshop, After Effects, Illustrator,
+                  Git, Github, Heroku, Trello, AWS, Cloudinary
+                  </p>
+                </div>
+
+                <div class="card card-block item-card">
+                  <h5> Methodologies </h5>
+                  <p> 
+                    Test Driven Development, Agile Development, RESTful architecture 
+                  </p>
+                </div>
+
+              </div>
             </div>
           </div>
-          
-          <!-- Education tab -->
-          <div class="collapse" id="education">
-            <div class="card card-block item-card">
-              School 1
-            </div>
-            <div class="card card-block item-card">
-              School 2
-            </div>
-            <div class="card card-block item-card">
-              School 3
+
+          <div class="card accordion-card">
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                    
+                <!-- Job history tab -->
+                <div class="card card-block item-card">
+                  <h4>
+                    Freelance Video Contractor, Cory Hack Productions Llc; Indianapolis, IN – 2003 - present
+                  </h4>
+                 
+                  <div>
+                    <h5>Clients</h5>  
+                    <p>
+                      Screenworks NEP, PRG, VER, Live Technologies Inc
+                    </p>
+
+                    <h5>Shows</h5>
+                    <p>
+                      Jimmy Buffett, Ringling Brothers and Barnum Bailey Circus, 21 Pilots, Marc Anthony, Red Bull, Microsoft, Firefly Festival, Day For Night Festival, Governors Ball Festival, Electric Daisy Carnival 
+                    </p>
+
+                    <h5>Positions/Responsibilities</h5>
+                    <p>
+                      <ul>
+                        <li> Video Director, Engineer, Projectionist, LED Technician, Camera Operator </li>
+                        <li> Facilitate crews for load in and load out of venues </li>
+                        <li> Maintain and troubleshoot show needs in a fast paced work environment </li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card card-block item-card">
+                  <h4>
+                    Video Director & Engineer, Dodd Technologies; Indianapolis, IN – 2010-2015
+                  </h4>
+                 
+                  <div>
+                    <h5>Clients</h5>  
+                    <p>
+                      Dodd Technologies
+                    </p>
+
+                    <h5>Shows</h5>  
+                    <p>
+                      Hilton, Salesforce, Cook Medical, ExactTarget, TD Bank, Beck’s Hybrids
+                    </p>
+
+                    <h5>Positions/Responsibilities</h5>
+                    <p>
+                      <ul>
+                        <li>  Guide clients in the creation of multi-tiered events; video, lighting, sound, set and scenic </li>
+                        <li>  Build, implement, and manage video systems  </li>
+                        <li>  Solutions oriented troubleshooting</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> <!-- /Job history tab -->
+              </div>
             </div>
           </div>
-        </p>
+
+
+          <div class="card accordion-card">
+            <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                <!-- Education tab -->
+                <div class="card card-block item-card">
+                  Purdue University, West Lafayette, IN – B.A. Interdisciplinary Studies in Video and Film, 2006 
+                </div>
+                <div class="card card-block item-card">
+                  Firehose Project – Full Stack Developer Graduate, 2018
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- /Accordion -->
+
       </div><!-- col-md-8 -->
     </div>
   </div>
