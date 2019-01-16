@@ -17,14 +17,14 @@
   <body>
     <%= render "shared/blog_nav" %>
     <br></br>
+    <%= render "shared/blog_blogheader" %>
+   
     <div class="container">
        <div class="row">
-        
-        <%= render "shared/blog_blogheader" %>
 
-        <%= yield %>
-        
-        <%= render "shared/blog_sidebar" %>
+          <%= yield %>
+          
+          <%= render "shared/blog_sidebar" %>
 
         </div>
 
